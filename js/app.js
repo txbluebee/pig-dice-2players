@@ -6,10 +6,10 @@ function Player(name, turnscore, score){
   this.score = score;
 }
 
-var currentDice = 1;
+
 
 Player.prototype.roll = function(){
-  currentDice = Math.floor(Math.random()*6+1);
+  var currentDice = Math.floor(Math.random()*6+1);
 
   if (currentDice === 1) {
     $(".dice").hide();
@@ -41,11 +41,11 @@ Player.prototype.roll = function(){
 
 Player.prototype.hold = function(){
   this.score = this.score + this.turnscore;
-  if (this.score > 100) {
+  this.turnscore = 0;
+  if (this.score >= 100) {
     alert("You win!");
     location.reload();
   }
-  this.turnscore = 0;
 }
 
 
