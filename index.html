@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pig Dice</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center">Pic Dice Game</h1>
+    </div>
+  </div>
+
+  <div class="container player-info">
+    <div class="row">
+      <div class="col-sm-4">
+        <form id="players">
+          <div class="form-group">
+            <label for="player-1">Player 1: </label>
+            <input type="text" id="player-1" class="form-control">
+            <label for="player-1">Player 2: </label>
+            <input type="text" id="player-2" class="form-control"> <br>
+            <button type="submit" name="button" class="btn  btn-primary">Let's Play!</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <div class="container playground">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2 class="mb-4">Player 1: <span class="player-1"></h2>
+        <button type="button" class="btn btn-success btn-lg mr-3 p1-roll">Roll</button>
+        <button type="button" class="btn btn-danger btn-lg p1-hold">Hold</button>
+        <h5 class="mt-3">Turn Score: <span class="p1-turnscore"></span></h5>
+        <h5>Score: <span class="p1-score"></span></h5>
+      </div>
+      <div class="col-sm-4">
+        <h2 class="mb-4">Dice Roll: <br><br><span class="diceRoll"></span></h2>
+        <div class="dice dice-default"><img src="img/dice.png" alt=""></div>
+        <div class="dice dice-1"><img src="img/dice1.png" alt=""></div>
+        <div class="dice dice-2"><img src="img/dice2.png" alt=""></div>
+        <div class="dice dice-3"><img src="img/dice3.png" alt=""></div>
+        <div class="dice dice-4"><img src="img/dice4.png" alt=""></div>
+        <div class="dice dice-5"><img src="img/dice5.png" alt=""></div>
+        <div class="dice dice-6"><img src="img/dice6.png" alt=""></div>
+
+      </div>
+      <div class="col-sm-4">
+        <h2 class="mb-4">Player 2: <span class="player-2"></h2>
+        <button type="button" class="btn btn-success btn-lg mr-3 p2-roll">Roll</button>
+        <button type="button" class="btn btn-danger btn-lg p2-hold">Hold</button>
+        <h5 class="mt-3">Turn Score: <span class="p2-turnscore"></span></h5>
+        <h5>Score: <span class="p2-score"></span></h5>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
